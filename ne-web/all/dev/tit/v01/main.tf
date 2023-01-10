@@ -20,3 +20,7 @@ module "flux-poc" {
   audience  = var.project
   ver       = var.ver
 }
+
+output "greet" {
+  value = module.flux-poc.greet
+}
